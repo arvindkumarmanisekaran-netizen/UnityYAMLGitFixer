@@ -1,0 +1,14 @@
+* text=auto
+*.unity merge=unityyamlmerge text
+*.prefab merge=unityyamlmerge text
+*.asset merge=unityyamlmerge text
+*.mat merge=unityyamlmerge text
+*.controller merge=unityyamlmerge text
+*.anim merge=unityyamlmerge text
+*.physicMaterial merge=unityyamlmerge text
+*.flare merge=unityyamlmerge text
+*.guiskin merge=unityyamlmerge text
+*.renderTexture merge=unityyamlmerge text
+*.overrideController merge=unityyamlmerge text
+*.meta merge=unityyamlmerge text
+*TerrainData.asset binary

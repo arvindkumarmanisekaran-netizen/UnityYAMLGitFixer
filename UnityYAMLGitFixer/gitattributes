@@ -1,0 +1,30 @@
+*text=auto
+*.unity merge=unityyamlmerge text
+*.prefab merge=unityyamlmerge text
+*.asset merge=unityyamlmerge text
+*.mat merge=unityyamlmerge text
+*.controller merge=unityyamlmerge text
+*.anim merge=unityyamlmerge text
+*.physicMaterial merge=unityyamlmerge text
+*.flare merge=unityyamlmerge text
+*.guiskin merge=unityyamlmerge text
+*.renderTexture merge=unityyamlmerge text
+*.overrideController merge=unityyamlmerge text
+*.meta merge=unityyamlmerge text
+*.cs merge=semanticmerge text   
+*.vb merge=semanticmerge text   
+*.js merge=semanticmerge text   
+*.xml merge=xmerge text
+*.json merge=merge text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.psd binary
+*.fbx binary
+*.blend binary
+*.mp3 binary
+*.wav binary
+*.exe binary
+*.dll binary
+*TerrainData.asset binary
