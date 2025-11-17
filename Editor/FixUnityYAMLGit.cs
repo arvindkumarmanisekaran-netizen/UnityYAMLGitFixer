@@ -56,7 +56,7 @@ public static class FixUnityYAMLGit
 
     private static string YamlMergerDirectory =>
     #if UNITY_EDITOR_WIN 
-     "Data\\Tools";
+     "Data/Tools";
     #elif UNITY_EDITOR_LINUX
      "Data/Tools";
     #elif UNITY_EDITOR_OSX
@@ -82,7 +82,7 @@ public static class FixUnityYAMLGit
 #if UNITY_EDITOR_WIN
         yamlFileName = "UnityYAMLMerge.exe";
         yamlMergerPath = Path.Combine(editorPath, YamlMergerDirectory, yamlFileName);
-        defaultPlasticSCMPath = "C:\\Program Files\\PlasticSCM5\\client";
+        defaultPlasticSCMPath = "C:/Program Files/PlasticSCM5/client";
         plasticSCMFileName = "plastic.exe";
 #elif UNITY_EDITOR_OSX
         yamlFileName = "UnityYAMLMerge";
