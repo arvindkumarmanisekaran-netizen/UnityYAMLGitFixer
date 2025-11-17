@@ -56,7 +56,7 @@ public static class FixUnityYAMLGit
 
     private static string YamlMergerDirectory =>
     #if UNITY_EDITOR_WIN 
-     "Data\Tools";
+     "Data\\Tools";
     #elif UNITY_EDITOR_LINUX
      "Data/Tools";
     #elif UNITY_EDITOR_OSX
