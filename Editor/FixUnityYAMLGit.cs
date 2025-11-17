@@ -78,11 +78,12 @@ public static class FixUnityYAMLGit
         return;
 
         string editorPath = Path.GetDirectoryName(EditorApplication.applicationPath);
-
+ 
 #if UNITY_EDITOR_WIN
         yamlFileName = "UnityYAMLMerge.exe";
         yamlMergerPath = Path.Combine(editorPath, YamlMergerDirectory, yamlFileName);
-        defaultPlasticSCMPath = "C:/Program Files/PlasticSCM5/client";
+        yamlMergerPath = yamlMergerPath.Replace('\\', '/');
+        defaultPlasticSCMPath = "";
         plasticSCMFileName = "plastic.exe";
 #elif UNITY_EDITOR_OSX
         yamlFileName = "UnityYAMLMerge";
@@ -215,7 +216,6 @@ public static class FixUnityYAMLGit
 
                     streamWriter.Close();
                 }
-
 
                 CurrentStatus = eStatus.FIXED_YAML_MERGE;
             }  
