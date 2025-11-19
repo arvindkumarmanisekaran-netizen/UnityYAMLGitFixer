@@ -5,6 +5,7 @@ using UnityEngine;
 using Softcircuits.IniFileParser;
 using System.Runtime.CompilerServices;
 using System.Linq;
+using System.Text;
 
 [InitializeOnLoad]
 public static class FixUnityYAMLGit
@@ -179,6 +180,12 @@ public static class FixUnityYAMLGit
             if (File.Exists(gitConfigPath))
             {
                 iniFile.Load(gitConfigPath);
+                
+                if(iniFile.GetSections().Count() == 0)
+                {
+                    Debug.Log("Zero Lines: CHECK THIS~!!!!!");
+                    return;
+                }
 
                 iniFile.SetSetting(unityYAMLMergeToolSectionName, "cmd", unityYAMLMergeToolCMDSettingValue);
                 iniFile.SetSetting(unityYAMLMergeToolSectionName, "trustExitCode", false);
