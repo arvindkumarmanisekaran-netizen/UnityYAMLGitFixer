@@ -23,7 +23,7 @@ public static class FixUnityYAMLGit
     private const string gitFolderName = ".git";
     private const string configFileName = "config";
     private const string excludeFileName = "info/exclude";
-    private const string gitAttributesFileName = ".gitAttributes";
+    private const string gitAttributesFileName = ".gitattributes";
 
     private static string projectRootPath;
     private static string gitFolderPath;
