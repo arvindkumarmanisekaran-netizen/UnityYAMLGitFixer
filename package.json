@@ -1,6 +1,6 @@
 {
   "name": "com.arvind.unityyamlgitfixer",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "displayName": "UnityYAMLGitFixer",
   "description": "Configuring git to use the UnityYAML tool for merging yaml files.",
   "unity": "2017.4",

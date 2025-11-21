@@ -28,3 +28,4 @@
 *.exe binary
 *.dll binary
 *TerrainData.asset binary
+*LightingData.asset binary

@@ -12,3 +12,4 @@
 *.overrideController merge=unityyamlmerge text
 *.meta merge=unityyamlmerge text
 *TerrainData.asset binary
+*LightingData.asset binary
